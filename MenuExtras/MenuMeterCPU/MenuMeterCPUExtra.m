@@ -499,7 +499,7 @@
 																		 thermometerTotalHeight * ((user + system) > 1 ? 1 : (user + system)))];
 	NSBezierPath *systemPath = [NSBezierPath bezierPathWithRect:NSMakeRect(offset + 1.5f, 1.5f, kCPUThermometerDisplayWidth - 3,
 																		  thermometerTotalHeight * system)];
-	NSBezierPath *framePath = [NSBezierPath bezierPathWithRect:NSMakeRect(offset + 1.5f, 1.5f, kCPUThermometerDisplayWidth - 3, thermometerTotalHeight)];
+//	NSBezierPath *framePath = [NSBezierPath bezierPathWithRect:NSMakeRect(offset + 1.5f, 1.5f, kCPUThermometerDisplayWidth - 3, thermometerTotalHeight)];
 
 	// Draw
 	[image lockFocus];
@@ -508,7 +508,7 @@
 	[systemColor set];
 	[systemPath fill];
 	[fgMenuThemeColor set];
-	[framePath stroke];
+	//[framePath stroke];
 
 	// Reset
 	[[NSColor blackColor] set];
